@@ -1,0 +1,123 @@
+
+:root {
+  --color-background: #0D1321;
+  --color-text: #fff;
+  --color-primary: #4b5261;
+  --color-secondary: #2B333F;
+  --color-success: #99C24D;
+  --color-danger: #c1121f;
+  --color-warning: #f48c06;
+  --color-link: #8ab4f8;
+}
+
+
+
+@media(prefers-color-scheme: dark) {
+    body{
+        background-color: var(--color-background);
+        color: var(--color-text);
+        
+    }
+    .identification-section h2{
+        background-color: var(--color-secondary);
+    }
+    header{
+        background-color: var(--color-background);
+    } 
+     
+    header .logo{
+        img{
+            content: url('/assets/img/logo-dark.png');
+            max-width: 20rem;
+        }
+    }
+
+    header nav ul li a{
+        color: var(--color-text);
+    }
+    header nav ul li a:hover{
+        color: var(--color-link);
+    }
+    header nav ul .btn-download a:hover {
+        color: var(--color-text);
+    }   
+    header .area .menu-mobile .btn-open span{
+        background-color: var(--color-text);
+    }
+    header .area .menu-mobile .btn-close span{
+        background-color: var(--color-text);
+    }
+    .hero{
+        background-color:var(--color-background);
+    }
+    .hero .left .social li a{
+        color: var(--color-text);
+    }
+     .hero .left .social li a:hover{
+        color: var(--color-link);
+     }
+     left {
+  background-color: var(--color-secondary); /* fundo escuro igual ao exemplo */
+  padding: 20px;
+}
+
+.border-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 3rem; 
+
+}
+
+.border-wrapper::before,
+.border-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 70%;
+  top: 15%;
+  background-color: #3f4457; 
+  border-radius: 0.4rem;
+}
+
+.border-wrapper::before {
+  left: 1rem;
+}
+
+.border-wrapper::after {
+  right: 1rem;
+}
+
+.border-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0.4rem solid var(--color-secondary); /* contorno ao redor da imagem */
+}
+     .skills .box-skills{
+        background-color: var(--color-primary);
+     }
+     .works .box-work{
+         background-color: var(--color-secondary);
+     }
+     .works .box-work .link-work .left{
+        background-color: var(--color-secondary);
+     }
+     .works .box-work .link-work .right{
+        
+     }
+     .works .box-work .link-work .right .title{
+        color: var(--color-text);
+     }
+     .works .box-work .link-work .right .description{
+        color: var(--color-text);
+     }
+     .works .box-work .link-work .right .skill li{
+        background-color: var(--color-secondary);
+     }
+     .works .box-work .link-work .right i{
+        color: var(--color-text);
+     }
+     footer{
+        background-color: var(--color-primary);
+     }
+}
